@@ -33,19 +33,19 @@ export function Skills() {
     {
       title: "Frontend Development",
       subtitle: "フロントエンド開発",
-      skills: ["React", "Next.js", "Nuxt.js"],
+      skills: ["React", "Next.js", "Nuxt.js", "Tailwind CSS"],
       color: "red",
     },
     {
       title: "Backend Development",
       subtitle: "バックエンド開発",
-      skills: ["Node.js", "Laravel", "Django", "Ruby on Rails", "ASP.NET"],
+      skills: ["Node.js", "Laravel", "Django", "Ruby on Rails", "ASP.NET", "Prisma"],
       color: "blue",
     },
     {
-      title: "Framework & CMS",
-      subtitle: "フレームワーク・CMS",
-      skills: ["WordPress", "Shopify"],
+      title: "CMS / Platforms",
+      subtitle: "CMS・プラットフォーム",
+      skills: ["WordPress", "Shopify", "Salesforce"],
       color: "green",
     },
     {
@@ -57,7 +57,16 @@ export function Skills() {
     {
       title: "Infrastructure & Tools",
       subtitle: "インフラ・ツール",
-      skills: ["AWS", "Docker", "Firebase", "WebSocket", "Stripe"],
+      skills: [
+        "AWS",
+        "Google Cloud",
+        "Docker",
+        "Firebase",
+        "MySQL",
+        "WebSocket",
+        "Stripe",
+        "Figma",
+      ],
       color: "purple",
     },
   ];
