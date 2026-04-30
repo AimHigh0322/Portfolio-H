@@ -28,7 +28,7 @@ export function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="min-h-screen flex items-center justify-center px-6 lg:px-12  pb-12"
+      className="min-h-screen flex items-center justify-center px-6 lg:px-12 pb-12"
     >
       <div className="max-w-7xl w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -40,7 +40,7 @@ export function About() {
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
                 src="/about-profile.png"
-                alt="Profile"
+                alt="プロフィール写真"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -49,7 +49,6 @@ export function About() {
               <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-foreground group-hover:border-foreground/60 transition-colors duration-300" />
               <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-foreground group-hover:border-foreground/60 transition-colors duration-300" />
               <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-foreground group-hover:border-foreground/60 transition-colors duration-300" />
-              {/* Hover overlay */}
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-all duration-300" />
             </div>
           </div>
@@ -61,7 +60,7 @@ export function About() {
               }`}
             >
               <h2 className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight">
-                私について
+                自己紹介
               </h2>
               <div className="h-px w-16 bg-foreground" />
             </div>
@@ -71,7 +70,7 @@ export function About() {
                 isVisible ? "animate-slide-up" : "opacity-0 translate-y-8"
               }`}
             >
-              AI・Web・モバイルアプリエンジニアとして、Next.js・Node.js・Laravel を中心としたフルスタック開発に7年以上従事。AI顔認証システムや自動採点・修了証発行など、AI機能を活用した実用的なWebシステムの開発実績があります。
+              AIとWebシステムの開発を8年以上やってきました。普段はPythonとTypeScriptをメインに、LLMを使った機能の組み込みやSaaS・Webアプリの開発に取り組んでいます。
             </p>
             <p
               className={`text-base lg:text-lg leading-relaxed text-muted-foreground transition-all duration-1000 ${
@@ -80,7 +79,7 @@ export function About() {
                   : "opacity-0 translate-y-8"
               }`}
             >
-              医療機関の予約・管理システム、ECサイト、オンライン講義プラットフォーム、モバイルヘルスアプリなど、様々な業界のWebシステム・アプリ開発を手がけています。バックエンド（Node.js、Laravel、PHP）からフロントエンド（React、Next.js）、クラウドインフラ（Google Cloud、AWS、Firebase）まで一貫して対応可能です。
+              よく使うのはOpenAIやAnthropicのAPI、LangChain、ベクトルDB（PineconeやpgvectorなどでのRAG）あたりです。WebはNext.js・FastAPI・Node.jsで、AI機能を組み込んだサービスを一通り自分で作れるようにしています。
             </p>
             <p
               className={`text-base lg:text-lg leading-relaxed text-muted-foreground transition-all duration-1000 ${
@@ -89,7 +88,7 @@ export function About() {
                   : "opacity-0 translate-y-8"
               }`}
             >
-              Stripe決済統合、SendGridメール配信、FCMプッシュ通知、Salesforce CRM連携など、実務で必要とされる機能を幅広く実装してきました。AI技術を活用した業務自動化や、Flutter・React Nativeによるクロスプラットフォームモバイルアプリ開発を強みとしています。
+              これまでにAI顔認証や自動採点、社内向けのドキュメント検索チャットボット、業務自動化のスクリプトなどを担当してきました。最新の手法を追いかけつつ、実際のプロダクトに落とし込めるかどうかを大切にしています。
             </p>
             <div
               className={`pt-4 transition-all duration-1000 ${
@@ -102,7 +101,7 @@ export function About() {
                 href="#contact"
                 className="inline-block text-sm border border-foreground px-8 py-3 hover:bg-foreground hover:text-background transition-all duration-300 hover:translate-x-1"
               >
-                Contact Me
+                お問い合わせ
               </a>
             </div>
           </div>

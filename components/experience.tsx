@@ -25,27 +25,27 @@ export function Experience() {
 
   const expertiseAreas = [
     {
-      title: "AI・機械学習統合",
+      title: "LLM・RAGの組み込み",
       description:
-        "AI顔認証システムの開発や、試験の自動採点・修了証発行など、AIを活用した業務自動化を実現。チャットボット、画像認識機能の実装により、ユーザー体験の向上とビジネスプロセスの効率化を支援しています。",
+        "OpenAIやClaudeのAPIを使ったチャットボット、社内ドキュメント検索（RAG）、要約・分類などを実装してきました。LangChainとベクトルDBを組み合わせて、業務で実際に使える形に落とし込むのが得意です。",
       number: "01",
     },
     {
-      title: "Webシステム・ECサイト開発",
+      title: "AI機能を組み込んだWebアプリ",
       description:
-        "Next.js、Node.js、Laravel/PHPを使用したフルスタックWebシステムの開発。ECサイト、予約管理システム、SaaSプラットフォームの構築。Stripe決済統合、SendGridメール配信、WebSocket実装により、スケーラブルなシステムアーキテクチャを構築しています。",
+        "Next.js・FastAPI・Node.jsを中心にしたフルスタック開発に、AI機能を組み込むのが得意です。試験の自動採点やAI顔認証、画像認識を組み込んだサービスなど、UIから推論APIまで一通り自分で作れます。",
       number: "02",
     },
     {
-      title: "モバイルアプリ開発",
+      title: "Webシステム・ECサイト",
       description:
-        "Flutter・React Nativeを使用したクロスプラットフォームモバイルアプリの開発。Firebase連携、FCMプッシュ通知、Health API統合、Salesforce CRM連携など、ビジネスニーズに応じた機能を実装し、実用性の高いアプリを提供しています。",
+        "Next.js、Node.js、Laravelでのフルスタック開発も継続して対応しています。予約管理、ECサイト、SaaSなど、Stripe決済やメール配信、リアルタイム機能まで含めて一気通貫で実装できます。",
       number: "03",
     },
     {
-      title: "ホームページ・コーポレートサイト",
+      title: "MLモデル・自動化",
       description:
-        "WordPress、Laravel、Next.jsを活用した企業サイトの開発。要件定義からデザイン、実装、運用保守まで一貫して対応。レスポンシブデザインとSEO最適化により、集客力と保守性を両立したサイトを構築しています。",
+        "PyTorchやOpenCV、Whisperを使った画像・音声処理の実装経験があります。既存モデルの活用と簡単なファインチューニング、業務自動化スクリプトまで、用途に合わせて選んで作っています。",
       number: "04",
     },
   ];
@@ -64,12 +64,11 @@ export function Experience() {
             }`}
           >
             <h2 className="text-4xl lg:text-5xl font-serif font-semibold tracking-tight">
-              専門分野
+              得意分野
             </h2>
             <div className="h-px w-24 bg-foreground" />
             <p className="text-base text-muted-foreground leading-relaxed max-w-3xl">
-              フロントエンドからバックエンド、AI・機械学習、モバイルアプリまで幅広い技術領域での開発実績を基に、
-              最新技術を活用した高品質なソリューションを提供いたします。
+              AI機能の実装からWebアプリの開発まで、まとめて対応できるのが持ち味です。「AIを使ってこういうことしたい」をそのまま形にできます。
             </p>
           </div>
 
@@ -106,24 +105,26 @@ export function Experience() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="space-y-2 hover:scale-105 transition-transform duration-300 cursor-default">
                 <p className="text-4xl lg:text-5xl font-display font-bold">
-                  40+
+                  30+
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  プロジェクト実績
+                  開発プロジェクト
                 </p>
               </div>
               <div className="space-y-2 hover:scale-105 transition-transform duration-300 cursor-default">
                 <p className="text-4xl lg:text-5xl font-display font-bold">
                   8+
                 </p>
-                <p className="text-sm text-muted-foreground">年の経験</p>
+                <p className="text-sm text-muted-foreground">
+                  年の実務経験
+                </p>
               </div>
               <div className="space-y-2 hover:scale-105 transition-transform duration-300 cursor-default">
                 <p className="text-4xl lg:text-5xl font-display font-bold">
-                  25+
+                  15+
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  満足いただいたクライアント
+                  取引先クライアント
                 </p>
               </div>
             </div>

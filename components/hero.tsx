@@ -37,7 +37,7 @@ export function Hero() {
                 <div className="w-24 h-24 lg:w-32 lg:h-32 relative overflow-hidden">
                   <Image
                     src="/avatar.png"
-                    alt="Yamamo Makoto"
+                    alt="Abdul Hakim"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     priority
@@ -58,25 +58,16 @@ export function Hero() {
                 </span>
               </div>
             </div>
-            {/* </CHANGE> */}
 
             <div
               className={`space-y-6 ${
                 isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
               }`}
             >
-              {/* Name with special font */}
-              <h1
-                className="text-7xl lg:text-9xl font-black tracking-tighter text-balance leading-none"
-                style={{ fontFamily: "var(--font-name)" }}
-              >
-                山同 誠
+              {/* Name */}
+              <h1 className="text-4xl lg:text-5xl font-black tracking-tighter text-balance leading-none">
+                Abdul Hakim
               </h1>
-
-              {/* English name */}
-              <p className="text-2xl lg:text-3xl text-muted-foreground font-light tracking-[0.1em] pl-1">
-                Yamamo Makoto
-              </p>
             </div>
 
             {/* Divider with animation */}
@@ -104,10 +95,10 @@ export function Hero() {
               }`}
             >
               <p className="text-xl lg:text-2xl font-light tracking-wide leading-relaxed">
-                フルスタックエンジニア
+                AI・フルスタックエンジニア
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed max-w-md">
-                最新技術を駆使したWebアプリケーション開発から、AI機能統合、モバイルアプリ開発まで、エンドツーエンドのソリューションを提供しています。ユーザー体験を重視した設計と、スケーラブルなシステム構築が得意です。
+                AI・Webシステム・SaaS開発を軸に、8年以上にわたってプロダクトを形にしてきました。LLMやRAGをはじめとするAI技術を、実用的でスケーラブルなサービスへ自然に組み込むことを得意としています。
               </p>
             </div>
 

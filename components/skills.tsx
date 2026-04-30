@@ -25,47 +25,39 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: "Programming Languages",
-      subtitle: "プログラミング言語",
-      skills: ["JavaScript", "TypeScript", "Python", "PHP", "Java", "C#"],
+      title: "AI・LLM",
+      skills: ["OpenAI API", "Claude API", "LangChain", "RAG", "Pinecone", "pgvector"],
       color: "orange",
     },
     {
-      title: "Frontend Development",
-      subtitle: "フロントエンド開発",
-      skills: ["React", "Next.js", "Nuxt.js", "Tailwind CSS"],
+      title: "ML・画像/音声",
+      skills: ["Python", "PyTorch", "OpenCV", "Whisper", "Hugging Face"],
       color: "red",
     },
     {
-      title: "Backend Development",
-      subtitle: "バックエンド開発",
-      skills: ["Node.js", "Laravel", "Django", "Ruby on Rails", "ASP.NET", "Prisma"],
+      title: "プログラミング言語",
+      skills: ["Python", "TypeScript", "JavaScript", "PHP"],
       color: "blue",
     },
     {
-      title: "CMS / Platforms",
-      subtitle: "CMS・プラットフォーム",
-      skills: ["WordPress", "Shopify", "Salesforce"],
+      title: "フロントエンド",
+      skills: ["React", "Next.js", "Tailwind CSS"],
       color: "green",
     },
     {
-      title: "Mobile App",
-      subtitle: "モバイルアプリ",
-      skills: ["React Native", "Flutter"],
+      title: "バックエンド",
+      skills: ["FastAPI", "Node.js", "Laravel", "Prisma", "MySQL"],
       color: "teal",
     },
     {
-      title: "Infrastructure & Tools",
-      subtitle: "インフラ・ツール",
+      title: "インフラ・ツール",
       skills: [
         "AWS",
         "Google Cloud",
         "Docker",
         "Firebase",
-        "MySQL",
-        "WebSocket",
         "Stripe",
-        "Figma",
+        "Git",
       ],
       color: "purple",
     },
@@ -96,41 +88,36 @@ export function Skills() {
       id="skills"
       className="min-h-screen flex items-center justify-center px-6 lg:px-12 py-32 bg-background relative overflow-hidden"
     >
-      {/* Sophisticated Japanese-inspired background patterns */}
+      {/* Background patterns */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Traditional Japanese grid pattern with varying sizes */}
         <div className="absolute top-0 left-0 w-64 h-64 border-t-2 border-l-2 border-border opacity-15" />
         <div className="absolute top-0 right-0 w-64 h-64 border-t-2 border-r-2 border-border opacity-15" />
         <div className="absolute bottom-0 left-0 w-64 h-64 border-b-2 border-l-2 border-border opacity-15" />
         <div className="absolute bottom-0 right-0 w-64 h-64 border-b-2 border-r-2 border-border opacity-15" />
 
-        {/* Secondary geometric patterns */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-border opacity-8" />
-        <div className="absolute top-1/4 right-1/4 w-32 h-32 border border-border opacity-8" />
-        <div className="absolute bottom-1/4 left-1/4 w-32 h-32 border border-border opacity-8" />
-        <div className="absolute bottom-1/4 right-1/4 w-32 h-32 border border-border opacity-8" />
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-border opacity-5" />
+        <div className="absolute top-1/4 right-1/4 w-32 h-32 border border-border opacity-5" />
+        <div className="absolute bottom-1/4 left-1/4 w-32 h-32 border border-border opacity-5" />
+        <div className="absolute bottom-1/4 right-1/4 w-32 h-32 border border-border opacity-5" />
 
-        {/* Central mandala-inspired elements */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-border opacity-12" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-border opacity-18" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-border opacity-10" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-border opacity-15" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 border border-border opacity-25" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-foreground opacity-8" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-foreground opacity-5" />
 
-        {/* Subtle diagonal lines for depth */}
         <div className="absolute top-1/3 left-1/3 w-px h-32 bg-border opacity-5 transform rotate-45" />
         <div className="absolute bottom-1/3 right-1/3 w-px h-32 bg-border opacity-5 transform rotate-45" />
       </div>
 
       <div className="max-w-7xl w-full relative z-10">
         <div className="space-y-12">
-          {/* Sophisticated Japanese-style header */}
+          {/* Header */}
           <div
             className={`space-y-12 text-center ${
               isVisible ? "animate-slide-up" : "opacity-0"
             }`}
           >
             <div className="space-y-8">
-              {/* Main title with enhanced typography */}
               <div className="space-y-6">
                 <div className="flex items-center justify-center gap-8">
                   <div className="h-0.5 w-20 bg-foreground" />
@@ -140,7 +127,6 @@ export function Skills() {
                   <div className="h-0.5 w-20 bg-foreground" />
                 </div>
 
-                {/* Japanese subtitle with decorative elements */}
                 <div className="space-y-4">
                   <div className="flex items-center justify-center gap-4">
                     <div className="h-px w-8 bg-border" />
@@ -153,7 +139,6 @@ export function Skills() {
                 </div>
               </div>
 
-              {/* Decorative line pattern */}
               <div className="flex items-center justify-center gap-2">
                 <div className="h-px w-4 bg-border" />
                 <div className="h-px w-2 bg-border" />
@@ -164,7 +149,7 @@ export function Skills() {
             </div>
           </div>
 
-          {/* Sophisticated Japanese-inspired grid layout */}
+          {/* Skills grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
               <div
@@ -179,9 +164,6 @@ export function Skills() {
                     <h3 className="text-2xl font-display font-bold tracking-tight group-hover:translate-x-2 transition-transform duration-500">
                       {category.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground tracking-widest font-light">
-                      {category.subtitle}
-                    </p>
                     <div className="h-0.5 w-16 bg-foreground group-hover:w-full transition-all duration-700" />
                   </div>
 
@@ -189,7 +171,7 @@ export function Skills() {
                     {category.skills.map((skill, skillIndex) => (
                       <li
                         key={skill}
-                        className="text-sm text-muted-foreground flex items-center gap-4 hover:text-foreground hover:translate-x-3 transition-all duration-400 cursor-default group/item"
+                        className="text-sm text-muted-foreground flex items-center gap-4 hover:text-foreground hover:translate-x-3 transition-all duration-300 cursor-default group/item"
                         style={{ transitionDelay: `${skillIndex * 0.08}s` }}
                       >
                         <span className="w-2 h-2 bg-foreground shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
@@ -204,7 +186,7 @@ export function Skills() {
             ))}
           </div>
 
-          {/* Sophisticated Japanese-style statistics section */}
+          {/* Statistics */}
           <div
             className={`space-y-12 border-t-2 border-border pt-12 ${
               isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
@@ -215,10 +197,10 @@ export function Skills() {
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-border" />
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-foreground" />
                 <div className="text-6xl font-display font-bold group-hover:scale-110 transition-transform duration-500">
-                  20+
+                  25+
                 </div>
                 <div className="text-sm text-muted-foreground tracking-widest font-light">
-                  フレームワーク
+                  フレームワーク・ツール
                 </div>
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-border" />
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-foreground" />
@@ -227,19 +209,17 @@ export function Skills() {
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-border" />
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-foreground" />
                 <div className="text-6xl font-display font-bold group-hover:scale-110 transition-transform duration-500">
-                  10+
+                  8+
                 </div>
                 <div className="text-sm text-muted-foreground tracking-widest font-light">
-                  プログラミング言語
+                  年の実務経験
                 </div>
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-border" />
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-foreground" />
               </div>
-           
             </div>
 
             <div className="space-y-8">
-              {/* Enhanced decorative line pattern */}
               <div className="flex items-center justify-center gap-3">
                 <div className="h-px w-8 bg-border" />
                 <div className="h-px w-4 bg-border" />
@@ -251,11 +231,9 @@ export function Skills() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed max-w-5xl mx-auto text-center font-light">
-                フロントエンドからバックエンド、インフラまで幅広い技術スタックを活用し、
-                クライアントのビジネス課題を解決するソリューションを提供します。
+                AI機能とWebアプリ開発を組み合わせて、お客様の課題を実際に動くプロダクトとして形にしています。
               </p>
 
-              {/* Bottom decorative line pattern */}
               <div className="flex items-center justify-center gap-3">
                 <div className="h-px w-8 bg-border" />
                 <div className="h-px w-4 bg-border" />

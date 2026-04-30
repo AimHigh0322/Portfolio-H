@@ -29,20 +29,20 @@ export function Projects() {
     {
       id: 1,
       title: "出張買取プラス",
-      category: "Webシステム",
+      category: "業務基幹システム",
       description:
-        "出張買取プラス 予約管理カレンダー株式会社プラスが運営する出張買取サービス「出張買取プラス」の公式予約システムです。お客様がご自宅にスタッフを呼んで不用品の査定・買取を依頼する際、訪問希望日時をオンラインで簡単に予約・確認できるWebアプリケーションを担当しました。このサービスは、家具や家電、ブランド品、楽器など幅広い不用品を対象に、神奈川県を中心に東京の一部地域（世田谷区・目黒区・大田区など）で出張査定を行っています",
-      tags: ["Next.js", "Google Cloud"],
+        "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
+      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA", "Google Cloud"],
       image: "/reservation.png",
       url: "",
     },
-     {
+    {
       id: 2,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
       description:
-        "Next.jsを活用したオンライン講義システムを開発しました。Stripeを利用したチケット購入機能、SendGridを利用したメール送信機能、動画および文書ベースの学習コンテンツ、動画学習の進捗状況追跡機能、試験受験時のAI顔認証機能、試験の自動採点機能、試験合格時の修了証自動発行機能を実装しました。",
-      tags: ["Next.js", "Stripe", "SendGrid", "AI"],
+        "React・Node.js・Expressで構築したオンライン講義システムです。WebSocketとWebRTCを使ったライブ配信・双方向のやり取りを実装し、Stripeでのチケット購入、進捗トラッキング、受験時のAI顔認証、自動採点、合格時の修了証発行まで、一連の機能を開発しました。",
+      tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe"],
       image: "/manabou.png",
       url: "",
     },
@@ -51,38 +51,37 @@ export function Projects() {
       title: "もし活",
       category: "モバイルアプリ",
       description:
-        "Flutter と Health API・Prisma を活用したモバイルアプリを開発。Firebase によるリアルタイムデータ管理と認証機能、CRM として Salesforce を統合し、顧客データの一元管理を実現。FCM によるプッシュ通知機能により、ユーザーへのタイムリーな情報配信を実現しました。",
+        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
       tags: ["Flutter", "Firebase", "Salesforce", "FCM"],
       image: "/moshikatsu.png",
       url: "",
     },
-    
     {
       id: 4,
       title: "lajollahale",
-      category: "E-Commerce",
+      category: "ECサイト",
       description:
-        "酒類販売ECサイトをShopifyプラットフォームで構築。カスタムテーマの開発と、商品検索・フィルタリング機能を実装。決済処理の最適化と、お客様の購入体験向上のためのUI/UX改善により、コンバージョン率を向上させました。",
+        "Shopifyで構築した酒類のECサイトです。カスタムテーマの開発と、商品の検索・絞り込み機能を実装しました。決済フローの最適化とUI/UXの改善で、購入完了率の向上につなげています。",
       tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
       image: "/lajollahale.png",
       url: "",
     },
     {
       id: 5,
-      title: "神戸電子専門学校",
-      category: "Website",
+      title: "Shortwave",
+      category: "AIプロダクト",
       description:
-        "専門学校様のウェブサイトをNode.jsとWebSocketを使用したリアルタイム通信機能で開発。学生向けの学習管理システムと、AIチャットボットの統合により、24時間対応のサポートシステムを構築。デザインとコーディングを担当し、学生の学習体験向上を実現しました。",
-      tags: ["Node.js", "WebSocket", "MySQL", "AI"],
-      image: "/ai-chatbot-dashboard.png",
+        "ShortwaveのコアとなるAI機能の設計と実装を担当しました。煩雑になりがちな受信メールをトリアージし、スレッドの要約や文脈に沿った返信ドラフト、スケジュール調整やフォローアップの提案までを自動化。プライバシーを守りつつ、本番環境でも安定したレイテンシと信頼性を実現しています。",
+      tags: ["Python", "PyTorch", "BERT", "T5", "RAG", "FAISS", "Kubernetes"],
+      image: "/shortwave.png",
       url: "",
     },
-   {
+    {
       id: 6,
       title: "クラウドデンタルクリニック",
-      category: "Website",
+      category: "Webサイト",
       description:
-        "歯科医院様のウェブサイトをHTML5/CSS3とJavaScriptで開発。診療予約システムと患者様向けの情報提供機能を実装。モバイルファーストのレスポンシブデザインにより、患者様の利便性を向上させ、来院促進効果を実現しました。",
+        "歯科医院のWebサイトをHTML5/CSS3とJavaScriptで制作しました。診療予約の仕組みと患者さん向けの情報ページを実装。モバイルファーストで設計して、スマホからでもストレスなく使えるようにしています。",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive"],
       image: "/minimalist-portfolio-website-on-laptop.png",
       url: "",
@@ -90,9 +89,9 @@ export function Projects() {
     {
       id: 7,
       title: "Aクリニック",
-      category: "Website",
+      category: "Webサイト",
       description:
-        "医療機関様のホームページをFigmaでデザインシステムを構築し、モダンなCSS Grid/Flexboxレイアウトで実装。患者様に安心感を与える清潔感のあるデザインと、診療情報の分かりやすい表示により、地域の皆様に愛されるクリニックのブランディングを支援しました。",
+        "医療機関のホームページです。Figmaでデザインシステムを作り、CSS Grid/Flexboxで実装しました。患者さんに安心してもらえる清潔感のあるデザインと、診療情報のわかりやすい見せ方を意識しています。",
       tags: ["Figma", "CSS Grid", "Flexbox", "Performance"],
       image: "/colorful-figma-course-landing-page-on-desktop.png",
       url: "",
@@ -117,8 +116,7 @@ export function Projects() {
                 開発実績
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl">
-                フロントエンドからバックエンド、モバイルアプリまで幅広い技術スタックを活用し、
-                クライアントのビジネス課題を解決するソリューションを提供しております。
+                これまで多くのお客様に貴重な機会をいただき、AI・Web・SaaS・モバイルアプリと、幅広い領域でプロダクト開発に携わらせていただきました。心から感謝するとともに、その中で形にしてきた案件の一部をご紹介いたします。
               </p>
             </div>
             <div className="h-px w-32 bg-foreground" />
@@ -190,7 +188,7 @@ export function Projects() {
           <button
             className="absolute top-4 right-4 lg:top-6 lg:right-6 text-3xl lg:text-4xl hover:text-muted-foreground transition-colors w-10 h-10 flex items-center justify-center"
             onClick={() => setSelectedImage(null)}
-            aria-label="Close"
+            aria-label="閉じる"
           >
             ×
           </button>
@@ -238,7 +236,7 @@ export function Projects() {
                   }}
                   className="text-sm border border-foreground px-6 py-2 hover:bg-foreground hover:text-background transition-all duration-300 hover:-translate-x-1"
                 >
-                  Previous
+                  前へ
                 </button>
                 <button
                   onClick={(e) => {
@@ -251,7 +249,7 @@ export function Projects() {
                   }}
                   className="text-sm border border-foreground px-6 py-2 hover:bg-foreground hover:text-background transition-all duration-300 hover:translate-x-1"
                 >
-                  Next
+                  次へ
                 </button>
               </div>
             </div>

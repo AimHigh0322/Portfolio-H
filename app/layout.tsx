@@ -7,9 +7,8 @@ import "./globals.css";
 const fontClasses = "font-sans";
 
 export const metadata: Metadata = {
-  title: "山同 誠 | AI, App, Web Engineer",
-  description: "Portfolio of Makoto Yamadō - Full Stack Engineer",
-  generator: "v0.app",
+  title: "Abdul Hakim | AIエンジニア",
+  description: "Abdul Hakimのポートフォリオ - AIエンジニア",
 };
 
 export default function RootLayout({

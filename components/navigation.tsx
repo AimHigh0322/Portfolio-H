@@ -28,6 +28,14 @@ export function Navigation() {
     }
   };
 
+  const navItems = [
+    { href: "#about", label: "自己紹介" },
+    { href: "#experience", label: "得意分野" },
+    { href: "#skills", label: "スキル" },
+    { href: "#projects", label: "実績" },
+    { href: "#contact", label: "お問い合わせ" },
+  ];
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -44,57 +52,24 @@ export function Navigation() {
             className="relative text-2xl font-display font-black tracking-tight hover:scale-105 transition-transform duration-300"
           >
             <span className="relative z-10 bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
-              山同 誠
+              Abdul Hakim
             </span>
             <div className="absolute -inset-2 bg-gradient-to-r from-foreground/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
           </a>
 
           <div className="hidden md:flex items-center space-x-1">
-            <a
-              href="#about"
-              onClick={(e) => handleNavClick(e, "#about")}
-              className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-            >
-              <span className="relative z-10">私について</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-            </a>
-            <a
-              href="#experience"
-              onClick={(e) => handleNavClick(e, "#experience")}
-              className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-            >
-              <span className="relative z-10">専門分野</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-            </a>
-            <a
-              href="#skills"
-              onClick={(e) => handleNavClick(e, "#skills")}
-              className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-            >
-              <span className="relative z-10">スキル</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-            </a>
-            <a
-              href="#projects"
-              onClick={(e) => handleNavClick(e, "#projects")}
-              className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-            >
-              <span className="relative z-10">プロジェクト</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-            </a>
-            <a
-              href="#contact"
-              onClick={(e) => handleNavClick(e, "#contact")}
-              className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-            >
-              <span className="relative z-10">お問い合わせ</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-            </a>
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="relative px-6 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
+              >
+                <span className="relative z-10">{item.label}</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              </a>
+            ))}
           </div>
 
           <button
@@ -127,51 +102,18 @@ export function Navigation() {
         <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-foreground/10 animate-fade-in">
           <div className="max-w-7xl mx-auto px-6 py-8">
             <div className="flex flex-col space-y-2">
-              <a
-                href="#about"
-                onClick={(e) => handleNavClick(e, "#about")}
-                className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-              >
-                <span className="relative z-10">私について</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </a>
-              <a
-                href="#experience"
-                onClick={(e) => handleNavClick(e, "#experience")}
-                className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-              >
-                <span className="relative z-10">専門分野</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </a>
-              <a
-                href="#skills"
-                onClick={(e) => handleNavClick(e, "#skills")}
-                className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-              >
-                <span className="relative z-10">スキル</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </a>
-              <a
-                href="#projects"
-                onClick={(e) => handleNavClick(e, "#projects")}
-                className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-              >
-                <span className="relative z-10">プロジェクト</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </a>
-              <a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, "#contact")}
-                className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
-              >
-                <span className="relative z-10">お問い合わせ</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </a>
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="relative px-4 py-3 text-sm font-semibold tracking-wide text-foreground/80 hover:text-foreground transition-all duration-300 group"
+                >
+                  <span className="relative z-10">{item.label}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-foreground to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                </a>
+              ))}
             </div>
           </div>
         </div>

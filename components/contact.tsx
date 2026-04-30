@@ -88,35 +88,45 @@ export function Contact() {
             </h2>
             <div className="h-px w-16 bg-foreground" />
             <p className="text-base lg:text-lg leading-relaxed text-muted-foreground pt-4">
-              プロジェクトのご相談やお問い合わせは、お気軽にご連絡ください。
+              開発のご相談やお見積もりなど、お気軽にご連絡ください。
             </p>
             <div className="space-y-4 pt-8">
-              <div className="flex items-baseline gap-4">
-                <span className="text-sm text-muted-foreground min-w-20">
-                  Email
-                </span>
+              <div className="flex items-center gap-4">
+                <svg className="w-5 h-5 text-muted-foreground shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 <a
-                  href="mailto:windmansmart0101@gmail.com"
+                  href="mailto:casmiyasu3811@gmail.com"
                   className="text-base hover:text-muted-foreground transition-all duration-300 relative group"
                 >
                   <span className="relative">
-                    windmansmart0101@gmail.com
+                    casmiyasu3811@gmail.com
                     <span className="absolute left-0 bottom-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
                   </span>
                 </a>
               </div>
-              <div className="flex items-baseline gap-4">
-                <span className="text-sm text-muted-foreground min-w-20">
-                  Chatwork
-                </span>
+              <div className="flex items-center gap-4">
+                <svg className="w-5 h-5 text-muted-foreground shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
                 <a
-                  href="https://www.chatwork.com/aimhigh_"
+                  href="https://www.chatwork.com/casmi3811_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base hover:text-muted-foreground transition-all duration-300 relative group"
                 >
                   <span className="relative">
-                    aimhigh_
+                    Chatwork: casmi3811_
+                    <span className="absolute left-0 bottom-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center gap-4">
+                <svg className="w-5 h-5 text-muted-foreground shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                <a
+                  href="https://t.me/casmi3811"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base hover:text-muted-foreground transition-all duration-300 relative group"
+                >
+                  <span className="relative">
+                    Telegram: @casmi3811
                     <span className="absolute left-0 bottom-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
                   </span>
                 </a>
@@ -205,18 +215,18 @@ export function Contact() {
                 {status === "sending"
                   ? "送信中..."
                   : status === "success"
-                  ? "送信完了"
+                  ? "送信しました"
                   : "送信する"}
               </button>
 
               {status === "success" && (
                 <p className="text-sm text-muted-foreground">
-                  メッセージを送信しました。ありがとうございます。
+                  メッセージを受け付けました。折り返しご連絡いたします。
                 </p>
               )}
               {status === "error" && (
                 <p className="text-sm text-destructive">
-                  送信に失敗しました。もう一度お試しください。
+                  送信できませんでした。お手数ですが、もう一度お試しください。
                 </p>
               )}
             </form>
@@ -224,7 +234,7 @@ export function Contact() {
         </div>
         <div className="mt-24 pt-12 border-t border-border">
           <p className="text-xs text-muted-foreground text-center">
-            © 2025 Makoto Yamadō. All rights reserved.
+            © 2026 Abdul Hakim. All rights reserved.
           </p>
         </div>
       </div>
