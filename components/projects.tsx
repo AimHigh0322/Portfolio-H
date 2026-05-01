@@ -78,22 +78,12 @@ export function Projects() {
     },
     {
       id: 6,
-      title: "クラウドデンタルクリニック",
-      category: "Webサイト",
+      title: "DogStar",
+      category: "ブロックチェーン",
       description:
-        "歯科医院のWebサイトをHTML5/CSS3とJavaScriptで制作しました。診療予約の仕組みと患者さん向けの情報ページを実装。モバイルファーストで設計して、スマホからでもストレスなく使えるようにしています。",
-      tags: ["HTML5", "CSS3", "JavaScript", "Responsive"],
-      image: "/minimalist-portfolio-website-on-laptop.png",
-      url: "",
-    },
-    {
-      id: 7,
-      title: "Aクリニック",
-      category: "Webサイト",
-      description:
-        "医療機関のホームページです。Figmaでデザインシステムを作り、CSS Grid/Flexboxで実装しました。患者さんに安心してもらえる清潔感のあるデザインと、診療情報のわかりやすい見せ方を意識しています。",
-      tags: ["Figma", "CSS Grid", "Flexbox", "Performance"],
-      image: "/colorful-figma-course-landing-page-on-desktop.png",
+        "Rustで実装したスマートコントラクトをコアに、トークン管理・資産取引・オンチェーン履歴の検証ロジックを構築したブロックチェーンプロダクトです。フロントエンドはReactで、ウォレット接続から取引フローまでをスムーズに体験できるUIを実装。バックエンドはAWS Lambdaのサーバーレス構成で、DynamoDBを使った高速なデータアクセスとAWS上でのスケーラブルな運用を実現しています。",
+      tags: ["React", "Rust", "Smart Contract", "AWS Lambda", "DynamoDB", "AWS"],
+      image: "/dogstart.png",
       url: "",
     },
   ];
